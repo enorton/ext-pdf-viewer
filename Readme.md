@@ -10,8 +10,8 @@ the use of Sencha CMD but it is very much recommended.
 No Browser Plugin required, pure JavaScript. PDF Rendering is done using the great Mozilla PDF.js Library (<a href="https://github.com/mozilla/pdf.js">https://github.com/mozilla/pdf.js</a>).
 
 ### Install ###
-Place this package in the 'packages/local' folder of your application or workspace.
-Then put the following in your app.json:
+Git clone this repo in the 'packages/local' folder of your application or workspace.
+After that put the following in your app.json:
 
     "classic": {
         "requires": [
@@ -34,12 +34,12 @@ Then put the following in your app.json:
 
 ### Usage 2 (with Ext.create) ###
 
-    Ext.create('PdfViewer.panel.PDF', {
+    Ext.create('PdfViewer.view.panel.PDF', {
         title    : 'PDF Panel',
-        width    : 489,
-        height   : 633,
-        pageScale: 0.75,                                           // Initial scaling of the PDF. 1 = 100%
-        src      : 'http://cdn.mozilla.net/pdfjs/tracemonkey.pdf', // URL to the PDF - Same Domain or Server with CORS Support
+        width    : 600,
+        height   : 500,
+        pageScale: 1.25, 
+        src      : 'http://cdn.mozilla.net/pdfjs/tracemonkey.pdf', 
         renderTo : Ext.getBody()
     });
     
