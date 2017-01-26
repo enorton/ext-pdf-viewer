@@ -21,6 +21,19 @@ After that put the following in your app.json:
         ...
   },
 
+Sencha CMD has the habit to compress all the javascript when creating a build. To avoid
+this "compression attack" for the Mozilla pdfjs files it is required to add the following
+at the top of your app.js:
+
+    Ext.require([
+       'Ext.container.Viewport',
+       'PdfViewer.singleton.Loader' // this is the one
+    ]);
+        
+This singleton puts dynamically the needed pdfjs files in the head of your index.html file.
+This reduces the effort of adding the tags in this file yourself and it will give no errors
+when creating your own build, for the paths are always correctly set.
+
 ### Usage 1 (as xtype) ###
 
     items: [{
@@ -60,6 +73,6 @@ Dutch or whatever language you like.
 
     
 ### Demo ###
-Follows soon
 
+For an demo, please visit <a href="https://enovision.github.io/Viewer">https://enovision.github.io/Viewer</a>
 

@@ -46,14 +46,15 @@
       "${package.dir}/examples"
     ]
   },
-  "js": [
+  "production": {
+    "compressor": {
+      "type": "closure"
+    }
+  },
+  "resources": [
     {
-      "path": "resources/lib/pdf.js/build/minified/web/compatibility.js",
-      "includeInBundle": true
-    },
-    {
-      "path": "resources/lib/pdf.js/build/minified/build/pdf.js",
-      "includeInBundle": true
+      "path": "resources",
+      "output": "shared"
     }
   ],
   "requires": []

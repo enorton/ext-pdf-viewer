@@ -8,7 +8,7 @@ Ext.define('PdfViewer.view.panel.PDF', {
     extend: 'Ext.panel.Panel',
     controller: 'PDFController',
 
-    xtype: 'widget.pdfviewer_panel',
+    xtype: 'pdfviewer_panel',
 
     requires: [
         'PdfViewer.view.combo.scaleCombo',
