@@ -60,6 +60,6 @@ Dutch or whatever language you like.
 
     
 ### Demo ###
+Follows soon
 
-For an demo, please visit <a href="http://SunboX.github.com/ext_ux_pdf_panel/demo/">http://SunboX.github.com/ext_ux_pdf_panel/demo/</a>
 
