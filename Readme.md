@@ -1,8 +1,8 @@
 ext-pdf-viewer (Sencha ExtJS v6 package)
 ========================================
 
-This package is heavily based on the <a href="http://SunboX.github.com/ext_ux_pdf_panel/demo/">ext_ux_pdf_panel</a> from SunboX. I have updated his version to a 
-Extjs 6.x package.
+This package is heavily based on the ExtJS 4 version <a href="http://SunboX.github.com/ext_ux_pdf_panel/demo/">ext_ux_pdf_panel</a> from SunboX. I have updated his version to
+an Extjs 6.x package.
 
 This package is developed for classic browser applications. It doesn't require
 the use of Sencha CMD but it is very much recommended.
@@ -19,10 +19,11 @@ After that put the following in your app.json:
            ....
         ],
         ...
-  },
+    },
 
+###### IMPORTANT !!! #######
 Sencha CMD has the habit to compress all the javascript when creating a build. To avoid
-this "compression attack" for the Mozilla pdfjs files it is required to add the following
+this "compression attack" for the Mozilla pdfjs files it is **required** to add the following
 at the top of your app.js:
 
     Ext.require([
@@ -32,7 +33,7 @@ at the top of your app.js:
         
 This singleton puts dynamically the needed pdfjs files in the head of your index.html file.
 This reduces the effort of adding the tags in this file yourself and it will give no errors
-when creating your own build, for the paths are always correctly set.
+when creating your own build for the paths are always correctly set.
 
 ### Usage 1 (as xtype) ###
 
