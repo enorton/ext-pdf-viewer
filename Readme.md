@@ -21,7 +21,7 @@ After that put the following in your app.json:
         ...
     },
 
-###### IMPORTANT !!! #######
+##### IMPORTANT !!! ######
 Sencha CMD has the habit to compress all the javascript when creating a build. To avoid
 this "compression attack" for the Mozilla pdfjs files it is **required** to add the following
 at the top of your app.js:
