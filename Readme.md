@@ -61,7 +61,7 @@ when creating your own build for the paths are always correctly set.
     
 #### pageBorders ####
 Places a border in the SASS value $color_neutral around the page (default:true)<br/>
-See folder sass/etc/ext.all   
+See folder sass/etc/all.scss  
 
 #### pageScale ####
 Initial scale of shown pages, 1 = 100%, 2 = 200% (default:1)
