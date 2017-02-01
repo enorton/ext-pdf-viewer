@@ -1,7 +1,10 @@
 /**
- * Copyright(c) 2017 Johan van de Merwe, <https://www.enovision.net>
+ * @copyright   Enovision GmbH
+ * @author      Johan van de Merwe
+ * @licence     MIT-Styled License
+ * @date        31 Jan 2017
+ * @class       PdfViewer.view.combo.scaleCombo
  *
- * license: MIT-style license
  */
 Ext.define('PdfViewer.view.combo.scaleCombo', {
     extend: 'Ext.form.field.ComboBox',

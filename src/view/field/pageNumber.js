@@ -1,7 +1,10 @@
 /**
- * Copyright(c) 2017 Johan van de Merwe, <https://www.enovision.net>
- *
- * license: MIT-style license
+ * @copyright   Enovision GmbH
+ * @author      Johan van de Merwe
+ * @licence     MIT-Styled License
+ * @date        31 Jan 2017
+ * @class       PdfViewer.view.field.pageNumber
+ * 
  */
 Ext.define('PdfViewer.view.field.pageNumber', {
     extend: 'Ext.form.field.Number',

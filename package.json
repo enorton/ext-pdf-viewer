@@ -39,7 +39,8 @@
   ],
   "overrides": [
     "${package.dir}/overrides",
-    "${package.dir}/${toolkit.name}/overrides"
+    "${package.dir}/${toolkit.name}/overrides",
+    "${package.dir}/locale/${package.locale}"
   ],
   "example": {
     "path": [
