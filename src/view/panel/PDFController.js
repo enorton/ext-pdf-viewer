@@ -26,7 +26,7 @@ Ext.define('PdfViewer.view.panel.PDFController', {
         }
     },
 
-    beforeInit: function(view) {
+    beforeInit: function (view) {
         // see singleton.Loader for default settings
         if (view.disableTextLayer === null) {
             view.disableTextLayer = PdfViewerLoader.getDisableTextLayer();
@@ -47,7 +47,7 @@ Ext.define('PdfViewer.view.panel.PDFController', {
             view.beforePageText = PdfViewerLoader.beforePageText;
         }
         if (view.afterPageText === null) {
-           view.afterPageText = PdfViewerLoader.afterPageText;
+            view.afterPageText = PdfViewerLoader.afterPageText;
         }
         if (view.firstText === null) {
             view.firstText = PdfViewerLoader.firstText;
@@ -75,8 +75,10 @@ Ext.define('PdfViewer.view.panel.PDFController', {
      * clears the panel
      */
     onUnset: function () {
-        this.container.innerHTML = '';
-        this.setToolbarProperties(0, true);
+        if (this.container !== null) {
+            this.container.innerHTML = '';
+            this.setToolbarProperties(0, true);
+        }
     },
 
     onGetDocument: function () {
